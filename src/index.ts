@@ -23,7 +23,7 @@ try {
       Comment: inputs.comment,
       Parameters: {
         workingDirectory: [inputs.workingDirectory],
-        commands: [inputs.command],
+        commands: inputs.command ? [inputs.command] : inputs.commands,
       },
     },
     (err: AWSError, data: SendCommandResult) => {
