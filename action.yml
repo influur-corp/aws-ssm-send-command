@@ -24,6 +24,10 @@ inputs:
     required: false
     description: "Bash command you want to execute"
     default: "echo $(date) >> logs.txt"
+  commands:
+    required: false
+    description: "Bash commands you want to execute"
+    default: "echo $(date) >> logs.txt"
   working-directory:
     required: false
     description: "Command execution location"
